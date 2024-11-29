@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Language Translator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='b.css') }}" />
+  </head>
+  <body>
+    <div class="translator-container">
+      <h1>Language Translator</h1>
+      <div class="translator-box">
+        <textarea id="input-text" placeholder="Enter text here..."></textarea>
+
+        <div class="select-lang">
+          <select id="language-select">
+            <option value="en-hi">English to Hindi</option>
+            <option value="hi-en">Hindi to English</option>
+          </select>
+        </div>
+
+        <button id="translate-button">Translate</button>
+
+        <div class="output-box">
+          <h2>Translated Text:</h2>
+          <p id="output-text"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='c.js') }}"></script>
+  </body>
+</html>
